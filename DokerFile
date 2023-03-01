@@ -1,0 +1,5 @@
+FROM centos:8
+# determines what the base for the container is. 
+#The base (also referred to as base image) is the CentOS distribution at version 8.
+RUN dnf install -y python38
+# rtuns a system command. This system command installs Python 3, which isn’t included in the base CentOS 8 image.
